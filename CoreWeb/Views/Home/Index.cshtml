@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2> Personel Maas Hesapla</h2>
+
+
+<form action="/Home/Maas" method="post">
+
+    <label for="GunSayisi">Çalışılan Gün Sayısı</label>
+    <input type="number" name="GunSayisi" value="" id="GunSayisi" class="form-control" />
+
+
+    <label>Personel Statüsü</label>
+    <select name="Statu" id="cmbStatu" class="form-control">
+        <option value="Mudur">Müdür</option>
+        <option value="Sef">Şef</option>
+        <option value="Memur">Memur</option>
+    </select>
+    </br>
+
+
+    <label>Medeni Durum</label>
+    <select name="medeniDurum" id="cmbDurum" class="form-control">
+        <option value="Evli">Evli</option>
+        <option value="Bekar">Bekar</option>
+    </select>
+    </br>
+
+
+    <input type="submit" name="Hesapla" value="Hesapla" class="btn btn-success" />
+
+
+
+</form>
+
+
+

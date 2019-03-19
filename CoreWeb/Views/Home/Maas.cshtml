@@ -1,0 +1,23 @@
+﻿@model CoreWeb.Models.Maas
+@{
+    ViewData["Title"] = "Maas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Personel Maaşı</h2>
+
+<div class="container">
+    <div class="form-group">
+        <label>Ara Toplam</label>
+        @Html.TextBoxFor(model => model.PMaas)
+        <br/>
+
+        <label>Asgari Geçim İndirimi</label>
+        @Html.TextBoxFor(model => model.Agi)
+        <br/>
+
+        <label>Personel Maaşı</label>
+        @Html.TextBoxFor(model => model.GenelToplam)
+    </div>
+</div>
+
